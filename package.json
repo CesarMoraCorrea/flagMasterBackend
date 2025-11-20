@@ -1,0 +1,19 @@
+{
+  "name": "flag-master-back",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "zod": "^3.22.4",
+    "express": "^4.21.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "mongodb-memory-server": "^9.5.0"
+  }
+}
