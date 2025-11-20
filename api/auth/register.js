@@ -1,8 +1,8 @@
-import { connectDB } from "../_lib/db.js";
-import User from "../_lib/models/User.js";
-import { RegisterSchema } from "../_lib/validation.js";
-import { hashPassword, signToken } from "../_lib/auth.js";
-import { withCors } from "../_lib/cors.js";
+import { connectDB } from "../../lib/db.js";
+import User from "../../lib/models/User.js";
+import { RegisterSchema } from "../../lib/validation.js";
+import { hashPassword, signToken } from "../../lib/auth.js";
+import { withCors } from "../../lib/cors.js";
 
 async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "method_not_allowed" });

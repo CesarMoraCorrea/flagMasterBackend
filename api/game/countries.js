@@ -1,5 +1,5 @@
-import { withCors } from "../_lib/cors.js";
-import { getCountriesCatalogWithCache } from "../_lib/countriesService.js";
+import { withCors } from "../../lib/cors.js";
+import { getCountriesCatalogWithCache } from "../../lib/countriesService.js";
 
 let deck = [];
 let deckIndex = 0;

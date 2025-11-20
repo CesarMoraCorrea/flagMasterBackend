@@ -1,6 +1,6 @@
-import { connectDB } from "../_lib/db.js";
-import { requireAuth } from "../_lib/auth.js";
-import { withCors } from "../_lib/cors.js";
+import { connectDB } from "../../lib/db.js";
+import { requireAuth } from "../../lib/auth.js";
+import { withCors } from "../../lib/cors.js";
 
 async function handler(req, res) {
   if (req.method !== "GET") return res.status(405).json({ error: "method_not_allowed" });

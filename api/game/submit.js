@@ -1,8 +1,8 @@
-import { connectDB } from "../_lib/db.js";
-import GameSession from "../_lib/models/GameSession.js";
-import { SubmitSchema } from "../_lib/validation.js";
-import { requireAuth, updateStats } from "../_lib/auth.js";
-import { withCors } from "../_lib/cors.js";
+import { connectDB } from "../../lib/db.js";
+import GameSession from "../../lib/models/GameSession.js";
+import { SubmitSchema } from "../../lib/validation.js";
+import { requireAuth, updateStats } from "../../lib/auth.js";
+import { withCors } from "../../lib/cors.js";
 
 async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "method_not_allowed" });

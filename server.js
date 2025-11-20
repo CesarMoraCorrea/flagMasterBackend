@@ -9,9 +9,9 @@ import countries from "./api/game/countries.js";
 import submit from "./api/game/submit.js";
 import history from "./api/game/history.js";
 import ranking from "./api/game/ranking.js";
-import { connectDB } from "./api/_lib/db.js";
-import User from "./api/_lib/models/User.js";
-import { hashPassword } from "./api/_lib/auth.js";
+import { connectDB } from "./lib/db.js";
+import User from "./lib/models/User.js";
+import { hashPassword } from "./lib/auth.js";
 
 const app = express();
 app.use(cors({ origin: process.env.API_BASE_URL || "http://localhost:5173" }));
